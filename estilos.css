@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0px;
+    padding: opx;
+}
+h1 {
+    color:blueviolet;
+    font-size: 50px;
+}
+
+.botonera {
+    width: 1200px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+#cabecera {
+    background-color: blanchedalmond;
+    width: 1200px;
+    height: 120px;
+}
+
+header p {
+    font-size: 25px;
+}
