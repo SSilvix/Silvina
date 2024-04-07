@@ -28,6 +28,8 @@ h1 {
     color: white;
     padding-left: 10px;
     padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     font-size: 65px;
 }
 
@@ -39,7 +41,7 @@ header h2 {
 
 header p {
     color:white;
-    padding-left: 900px;
+    padding-left: 10px;
 }
 
 main {
