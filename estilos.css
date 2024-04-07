@@ -16,8 +16,13 @@
 }
 
 img { 
-    border-radius: 10px;
+    float:right;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: black;
+    margin-right: 40px;
 }
+
 .botonera {
     background-color: black;
     color: white;
@@ -48,10 +53,51 @@ main {
     padding-left: 45px;
 }
 
+main h2 {
+    font-family: Space-Grotesk, sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 13%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 @font-face {
     font-family: "Space-Grotesk";
     src: url("fonts/SpaceGrotesk-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: "Helvetica";
+    src: url("fonts/Helvetica.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monofonto";
+    src: url("fonts/Typodermic\ -\ Monofonto\ Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+footer a {
+    color: white;
+    font-family: Monofonto, sans-serif;
+    text-align: center;
+}
+
+.logo {
+    float:left;
 }
