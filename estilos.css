@@ -35,6 +35,9 @@ h1 {
     padding-top: 40px;
     padding-right: 0px;
     padding-bottom: 0px;
+ /*acá podríamos hacer una sola línea de padding: 
+    padding: 40px 0 0 10p;
+    donde el primer valor es top, el segundo right, el tercero bottom y el 4to de left*/
     font-size: 65px;
 }
 
@@ -59,7 +62,7 @@ main h2 {
     background-color: black;
     border-radius: 5px;
     padding: 10px;
-    width: 13%;
+    width: 13%; /*cuando son anchos muy chiquitos está bueno que el tamaño lo brinden los elementos internos y no con porcentajes, igual el intento muy bien 10*/
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -67,7 +70,7 @@ main h2 {
     font-family: "Space-Grotesk";
     src: url("fonts/SpaceGrotesk-Regular.ttf") format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; /*por una cuestión de prolijidad, siempre está bueno que los estilos generales como las fuentes queden arriba de todo el documento*/
 }
 
 @font-face {
@@ -99,5 +102,5 @@ footer a {
 }
 
 .logo {
-    float:left;
+    float:left; /*fijate si en lugar de float podés aplicar position*/
 }
