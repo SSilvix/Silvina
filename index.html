@@ -10,11 +10,11 @@
 
 <body>
     <header>
-        <section class="flex-contenedor">
+        <section class="flex-contenedor"> <!--las sections y los articles sólo se utilizan en main porque es una etiqueta decontenido, si necesitás hacer divisiones en header y footer utilizá divs-->
             <h1>SILVINA SÁNCHEZ</h1>
             <p>DISEÑADORA GRÁFICA JUNIOR</p>
                 <nav class="botonera">
-                    <ul>
+                    <ul> <!--otra opción es utilizar directamente las <a> dentro del nav sin la ul para utilizar menos etiqutas pero así estaá bien-->
                         <li class="flex-item d"><a href="img/cv-silvina-sanchez.pdf" download="cv-silvina-sanchez" target="_blank">Descargar CV</a></li>
                         <li class="flex-item e"><a href="https://www.instagram.com/_silv1x/" target="_blank">instagram</a></li>
                     </ul>
@@ -24,12 +24,12 @@
 
     <main>
         <section>
-            <img src="img/fotocv-silvinasanchez.jpg" width="200px" height="200px" alt="fotocv-silvinasanchez.jpg" />
+            <img src="img/fotocv-silvinasanchez.jpg" width="200px" height="200px" alt="fotocv-silvinasanchez.jpg" /> <!--el alt es un atributo que va a ser leido por humanos cuando la imagen tenga problemas para cargarse y por herramientas de accesibilidad para personas con discapacidad visual, lo que quiere decir que debería ser entendible por una persona. si mi abuela lee este alt probablemente no entienda que quiere decir, y en este caso podemos utilizar mayúsculas, espacios y caracteres especiales, por ejemplo podríamos poner "aquí estaría mi foto de perfil si tan solo tuviese buen internet". Revisa todos los alt de las img-->
             <h2>SOBRE MÍ</h2>
             <p>¡Hola! Mi nombre es Silvina, soy estudiante avanzada de la licenciatura en diseño y Comunicación Visual en la UNLa. 
                 Como podrás ver, también soy ilustradora! Uno de mis sueños es llevar mis ilustraciones a libros y cuentos al estilo de Harry Potter! </p>
-            <p>
-            <ul class="horariosypreferencias">
+            <p> <!--una p no puede incluir una lista interna, va directamente la ul-->
+            <ul class="horariosypreferencias"> <!--con las clases e ids así de complejos está bueno utilizar guiones para ayudar a la lectura, o sea "horarios-y-preferencias" ya que no podemos utilizar espacios-->
                 <li>Disponibilidad part-time.</li>
                 <li>Modalidad híbrida</li>
             </ul>
@@ -52,7 +52,7 @@
             <img class=trabajo1 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo1" />
             <img class=trabajo2 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo2" />
             <img class=trabajo3 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo3" />
-                <ul> 
+                <ul> <!--error de indentado-->
                     <li>diseño de identidad</li>
                     <li>diseño de sistema visual</li>
                     <li>diseño de personajes</li>
@@ -65,14 +65,14 @@
                 <li>Diseño Editorial</li>
                 <li>Ilustración</li>
                 <li>Adobe Creative Suite</li>
-                <li> Redes Sociales</li>
+                <li> Redes Sociales</li> <!--guarda el espacio-->
             </ul>
         </section>
 
-        <section>
+        <section> <!--acá iría bien un address, a menos que hayas seteado todas las sections juntas y no quieras modificar eso de css-->
             <h2>CONTACTO</h2>
             <ul class="infocontacto">
-                <li>CELULAR +54 11 2679 04 70</li>
+                <li>CELULAR +54 11 2679 04 70</li> <!--complementá esto con la etiqueta <a>-->
                 <li>RESIDENCIA Zona Sur, Temperley.</li>
                 <li>GMAIL silvinavictoriasanchez@gmail.com</li>
             </ul>
