@@ -30,7 +30,7 @@
 
 header section {
     width: 100%;
-    height: 450px;
+    height: 450px; /*los altos no van en porcentajes porque en su alto tienen medida infinita y un 100% sería absurdo. en cambio, hay otra medida que son los vh que significa viewport height, o sea, tamaño del visualizador, y su funcionamiento es parecido al porcentaje. si yo establezco 100vh estaría tomando el 100% del alto de la pantalla, sólo que ahora tiene un parámetro de donde calcular un número. si buscabas tener un alto en % para que llene la pantalla la sección es por acá, sino lo ideal es que el tamaño esté dado por sus elementos internos. Se me ocurre que podrías tener una división distinta en el header de dos elementos, por un lado un div que contenga al banner como fondo, y otro con tus datos y fondo violeta*/
     background-image: url(img/portada-ppal.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -40,15 +40,15 @@ header section {
 
 h1 {
     color: white;
-    width: fit-content;
+    width: fit-content; /*width y height no son necesarios si no se les aplica un número específico o buscamos un resultado concreto, fit content está aplicado de forma predeterminada y no se escribe*/
     height: fit-content;
-    padding: 200px 0px 0px 40px;
+    padding: 200px 0px 0px 40px; /*como regla general si los paddings y margins son mayores a 100px es porque hay una solución mejor a través de flex*/
     font-size: 90px;
 }
 
 header h2 { 
     color:white;
-    width: fit-content;
+    width: fit-content; /*iden, estos se van*/
     height: fit-content;
     font-size: 70px;
     padding: 0px 0px 0px 40px;
@@ -56,7 +56,7 @@ header h2 {
 
 header p {
     color:white;
-    width: 100%;
+    width: 100%; /*este 100% está generando un scroll horizontal y no tiene sentido con el diseño de figma, se va*/
     height: fit-content;
     padding-left: 45px;
     margin-top: 10px;
@@ -123,7 +123,7 @@ main h2 {
     background-color: black;
     border-radius: 20px;
     padding: 10px;
-    width: 13%;
+    width: 13%; /*un porcentaje tan pequeño es contraproducente en tamaños chicos de pantalla, en este caso hay que remarcar que el ancho sea fit content*/
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
@@ -134,7 +134,7 @@ footer {
     width: 100%;
     height: 100px;
     margin-top: 30px;
-    padding: 50px;
+    padding: 50px; /*al tener el ancho al 100% y un padding se está generando un scroll horizontal porque, por ejemplo, yo tengo un monitor de 1920px de ancho, entonces mi 100% es de esa medida, y si le agregamos paddings de 50px considerando izq y der nos quedaría un ancho total de 1920+50+50=2120px y no entra en la pantalla. para arreglar esto hay que sumar la propiedad box-sizing: border-box para que el tamaño de la caja contemple también los paddings y calcule el tamaño correcto, o sea que el 100% sea 1920-50-50=1820 + los paddings*/
 }
 
 footer a {
