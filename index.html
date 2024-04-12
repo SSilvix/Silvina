@@ -9,79 +9,94 @@
 </head>
 
 <body>
-    <header>
-        <section class="flex-contenedor">
-            <h1>SILVINA SÁNCHEZ</h1>
-            <p>DISEÑADORA GRÁFICA JUNIOR</p>
-                <nav class="botonera">
-                    <ul>
-                        <li class="flex-item d"><a href="img/cv-silvina-sanchez.pdf" download="cv-silvina-sanchez" target="_blank">Descargar CV</a></li>
-                        <li class="flex-item e"><a href="https://www.instagram.com/_silv1x/" target="_blank">instagram</a></li>
-                    </ul>
-                </nav>
+    <header id="cabecera">
+        <img class="portadainicio" src="img/portada-ppal.jpg" width="100%" height="100%" alt="portada"/>
+        <section class="contenedordatos">
+                <h1>SILVINA SÁNCHEZ</h1>
+            <section class="subybotones">
+                <p class="subtitulo">DISEÑADORA GRÁFICA JUNIOR</p>
+                <!-- esto es algo que quiero usar a modo decorativo, aún no sé como meterlo en el css <p>»</p> -->
+                    <nav class="botonera">
+                        <ul>
+                            <li><a href="img/cv-silvina-sanchez.pdf" download="cv-silvina-sanchez" target="_blank">Descargar CV</a></li>
+                            <li><a href="https://www.instagram.com/_silv1x/" target="_blank">Instagram</a></li>
+                        </ul>
+                    </nav>
+            </section>
         </section>
     </header>
 
     <main>
-        <section>
-            <img src="img/fotocv-silvinasanchez.jpg" width="200px" height="200px" alt="fotocv-silvinasanchez.jpg" />
-            <h2>SOBRE MÍ</h2>
-            <p>¡Hola! Mi nombre es Silvina, soy estudiante avanzada de la licenciatura en diseño y Comunicación Visual en la UNLa. 
+        <section class="seccion1">
+            <img class="fotoperfil" src="img/fotocv-silvinasanchez.jpg" width="250px" height="250px" alt="fotocv-silvinasanchez.jpg" />
+            <article>
+                <h2>SOBRE MÍ</h2>
+                <p class="descripcion1">¡Hola! Mi nombre es Silvina, soy estudiante avanzada de la licenciatura en diseño y Comunicación Visual en la UNLa. <br>
                 Como podrás ver, también soy ilustradora! Uno de mis sueños es llevar mis ilustraciones a libros y cuentos al estilo de Harry Potter! </p>
-            <p>
-            <ul class="horariosypreferencias">
-                <li>Disponibilidad part-time.</li>
-                <li>Modalidad híbrida</li>
-            </ul>
-            </p>
+            </article>
+            <aside class="horarios">
+                <p class="comilla1">»</p>
+                <p>Disponibilidad part-time.</p>
+                <p class="comilla2">»</p>
+                <p>Modalidad híbrida</p>
+            </aside>
+         </section>
+
+        <section class="intereses">
+            <h2>Ilustración y <br> mucho amor</h2>
+            <p>Amo la ilustración, me gusta pensar y ambientar personajes en épocas medievales, retomar estilos antiguos como el Art Nouveau.</p>
         </section>
 
-        <section>
-            <h2>EDUCACIÓN</h2>
-            <p class="educacion1"> Estudio en la Universidad Nacional de Lanús, en la licenciatura en Diseño y Comunicación visual, cursando actualmente el 5to año. Me gustaría mucho especializarme particularmente en ilustración en la Universidad de Buenos Aires.</p>
-                <article>
-                    <h4>Otros datos</h4>
-                    <p> Actualmente soy ayudante en la materia de Taller de Diseño 3 junto con otras compañeras, considero esta experiencia crucial para mí.</p>
-                </article>
+        <section class="galeria">
+            <img class=trabajo1 src="img/trabajo1.jpg" wight="250px" height="250px" alt="trabajo1" />
+            <img class=trabajo2 src="img/trabajo2.jpg" wight="300px" height="250px" alt="trabajo2" />
+            <img class=trabajo3 src="img/trabajo3.jpg" wight="300px" height="250px" alt="trabajo3" />
+        </section>
+
+        <section class="piedefotos">
+            <p class="sub1">diseño de identidad</p>
+            <p class="sub2">diseño de sistema visual</p>
+            <p class="sub3">diseño de personajes</p>
+        </section>
+
+        <section class="educacion">
+            <div class="conteducacion">
+                <h2>EDUCACIÓN</h2>
+                <p class="educacion1"> Estudio en la Universidad Nacional de Lanús, en la licenciatura en Diseño y Comunicación visual, cursando actualmente el 5to año. Me gustaría mucho especializarme particularmente en ilustración en la Universidad de Buenos Aires.</p>
+            </div>
+            <article class="otrosdatos">
+                        <h4>OTROS DATOS</h4>
+                        <p>Actualmente soy ayudante en la materia de Taller de Diseño 3 junto con otras compañeras, considero esta 
+            </article>
                 
         </section>
 
-        <section>
-            <h2>Iustración y mucho amor</h2>
-            <p>Amo la ilustración, me gusta pensar y ambientar personajes en épocas medievales, retomar estilos antiguos como el Art Nouveau.</p>
-            <img class=trabajo1 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo1" />
-            <img class=trabajo2 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo2" />
-            <img class=trabajo3 src="img/silvix-logo.png" wight="200px" height="200px" alt="trabajo3" />
-                <ul> 
-                    <li>diseño de identidad</li>
-                    <li>diseño de sistema visual</li>
-                    <li>diseño de personajes</li>
-                </ul>
-        </section>
-
-        <section>
+        <section class="habilidades">
             <h2>HABILIDADES</h2>
-            <ul class="habilidades">
+            <ul>
                 <li>Diseño Editorial</li>
                 <li>Ilustración</li>
-                <li>Adobe Creative Suite</li>
-                <li> Redes Sociales</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Indesign</li>
+                <li>Figma</li>
             </ul>
         </section>
 
-        <section>
+      <!-- <section class="contacto">
             <h2>CONTACTO</h2>
             <ul class="infocontacto">
                 <li>CELULAR +54 11 2679 04 70</li>
                 <li>RESIDENCIA Zona Sur, Temperley.</li>
                 <li>GMAIL silvinavictoriasanchez@gmail.com</li>
             </ul>
-        </section>
+        </section>-->
     </main>
 
     <footer>
+
+        <img class="logo" src="img/silvix-logo-web.svg" wight="130px" height="130px" alt="logo-de-silvix"/>
         <a href="https://www.behance.net/silvinasanchez" target="_blank">MIRÁ MIS TRABAJOS EN BEHANCE!</a>
-        <img class="logo" src="img/silvix-logo-web.svg" wight="100px" height="100px" alt="logo-de-silvix" />
     </footer>
 
 </body>
