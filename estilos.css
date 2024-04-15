@@ -28,7 +28,7 @@
 }
 
 #banner {
-    height: 180px;
+    height: 18vh;
     width: 100%;
     background-image: url(img/portada-ppal.jpg);
     background-repeat: no-repeat;
@@ -37,28 +37,26 @@
 }
 
 .contenedordatos {
-    height: 275px;
-    color: white;
+    font-family: 'Space-Grotesk', sans-serif;
+    color: pink;
     background-color: #3423A3;
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
 #header-container {
     display: flex;
-    justify-content: center;
-    max-width: 1285px;
+    max-width: 1366px;
     align-items: center;
-    padding: 20px;
+}
+
+header p {
+    font-size: 239px;
+    padding-bottom: 56px;
 }
 
 h1 { 
-    font-family: 'Space-Grotesk', sans-serif;
     font-size: 86px;
-    
-
 }
 
 header a {
@@ -71,6 +69,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     gap: 85px;
 }
 
@@ -105,40 +104,31 @@ nav a {
 
 .seccion1 {
     font-family: 'Helvetica', sans-serif;
-    height: 350px;
-    background-color: #D9D9D9;
+    background-color: pink;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
 
 }
 
 .fotoperfil {
+    margin-left: 50px;
     border-radius: 100%;
     border: 5px solid #3423A3; 
 }
 
 .seccion1 h2 {
-    padding-top: 27px;
     padding-bottom: 10px;
     color: #3423A3;
-    /*border: 2px solid red;*/
-    width: fit-content;
-    height: 39px;
-    font-size: 35px;
+    font-size: 47px;
 }
 
 .descripcion1 {
-    font-size: 20px;
-    /*border: 2px solid blue;*/
-    width: 430px;
+    font-size: 25px;
+    width: 599px;
     height: 180px;
 }
-
-/*aside {
-    width: 420px;
-    height: 250px;
-    /*border: 1px solid orange;}*/
 
 aside p{
     width: 100px;
@@ -146,17 +136,16 @@ aside p{
     font-weight: bold;
     font-family: 'Space-Grotesk', sans-serif;
     text-transform: uppercase;
-    /*border: 1px solid orange;*/
 }
 
 .comilla1 {
     color: #3423A3;
-    font-size: 50px;
+    font-size: 79px;
 }
 
 .comilla2 {
     color: #3423A3;
-    font-size: 50px;
+    font-size: 79px;
 }
 
 .intereses {
@@ -173,7 +162,6 @@ aside p{
     height: 200px;
     padding: 30px 12px 7px 0px;
     margin-left: 35px;
-    /*border: 1px solid red;*/
 }
 
 .intereses p {
@@ -182,12 +170,11 @@ aside p{
     width: 430px;
     height: 200px;
     font-size: 20px;
-    /*border: 1px solid red;*/
+
 }
 
 .galeria {
     height: 300px;
-    /*border: 1px solid red;*/
     background-color: #3423A3;
     padding-top: 20px;
     display: flex;
@@ -207,7 +194,6 @@ aside p{
     color: white;
     font-family: 'Space-Grotesk', sans-serif;
     text-transform: uppercase;
-    /*border: 1px solid red;*/
     display: flex;
     text-align: center;
 }
