@@ -51,7 +51,7 @@
 }
 
 header p {
-    font-size: 239px;
+    font-size: 239px; /*fijate si te animás a empezar a usar em o rem en las tipos*/
     padding-bottom: 56px;
 }
 
@@ -69,7 +69,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; /*esto no hace nada*/
     gap: 85px;
 }
 
@@ -83,12 +83,12 @@ header a {
 }
 
 nav a {
-    font-family: 'Monofonto', sans-serif;;
+    font-family: 'Monofonto', sans-serif;; /*esta fuente no hace falta aplicarla de nuevo porque se hereda de la class .subybotones*/
     font-size: 20px;
     list-style: none;
     text-decoration: none;
     padding: 8px;
-    margin-left: 25px;
+    margin-left: 25px; /*en lugar de margin fijate si podés usar gap en el padre*/
     background-color: white;
     border-radius: 50px;
 }
@@ -126,8 +126,8 @@ nav a {
 
 .descripcion1 {
     font-size: 25px;
-    width: 599px;
-    height: 180px;
+    width: 599px; /*mmm duduoso*/
+    height: 180px; /*dudosísimo*/
 }
 
 aside p{
