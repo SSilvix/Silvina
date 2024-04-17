@@ -6,9 +6,14 @@
     padding: 0px;
 }
 
+body {
+    background-color: pink;
+}
+
 @font-face {
     font-family: "Space-Grotesk";
     src: url("fonts/SpaceGrotesk-Regular.ttf") format('truetype');
+    font-weight: bold;
     font-weight: normal;
     font-style: normal;
 }
@@ -27,69 +32,60 @@
     font-style: normal;
 }
 
-#banner {
-    height: 18vh;
-    width: 100%;
-    background-image: url(img/portada-ppal.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
+/* HEADER*/
 .contenedordatos {
+    height: 41vh;
+    width: 100%;
     font-family: 'Space-Grotesk', sans-serif;
     color: pink;
     background-color: #3423A3;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #header-container {
-    display: flex;
     max-width: 1366px;
-    align-items: center;
 }
 
 header p {
     font-size: 239px;
-    padding-bottom: 56px;
 }
 
 h1 { 
-    font-size: 86px;
+    font-size: 131px;
+    width: fit-content;
+}
+
+.subybotones {
+    font-family: 'Monofonto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.subtitulo {
+    font-size: 45px;
+    letter-spacing: 12px;
 }
 
 header a {
     text-decoration: none;
     list-style: none;
-    color:#3423A3;
-}
-.subybotones {
-    font-family: 'Monofonto', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 85px;
-}
-
-.subtitulo {
-    font-size: 25px;
-    letter-spacing: 5px;
-}
-
-.botonera {
-    display: flex;
+    color:pink;
 }
 
 nav a {
-    font-family: 'Monofonto', sans-serif;;
+    font-family: 'Monofonto', sans-serif;
     font-size: 20px;
     list-style: none;
+    background-color: #3423a3;
     text-decoration: none;
-    padding: 8px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     margin-left: 25px;
-    background-color: white;
     border-radius: 50px;
 }
 
@@ -102,74 +98,96 @@ nav a {
     font-size: 14px;
 }
 
+/* fin de HEADER*/
+
+
+
+/* SECCION 1*/
+
+.decoracion1 {
+    font-size: 150px;
+    font-family: 'Space-Grotesk', sans-serif;
+    font-weight: bold;
+    color: #3423A3;
+    width: 100%;
+    background-color: pink;
+    margin-top: -85px;
+}
+
 .seccion1 {
     font-family: 'Helvetica', sans-serif;
     background-color: pink;
     display: flex;
-    align-items: center;
-    padding: 50px;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    gap: 70px;
+    height: 41vh;
 }
 
-.fotoperfil {
-    margin-left: 50px;
-    border-radius: 100%;
-    border: 5px solid #3423A3; 
+.seccion1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .seccion1 h2 {
-    padding-bottom: 10px;
     color: #3423A3;
     font-size: 47px;
+    letter-spacing: 10px;
 }
 
 .descripcion1 {
-    font-size: 25px;
-    width: 599px;
-    height: 180px;
+    font-size: 35px;
+    width: 873px;
+}
+
+.horarios {
+    color: #3423A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 aside p{
-    width: 100px;
-    font-size: 15px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Space-Grotesk', sans-serif;
     text-transform: uppercase;
 }
 
-.comilla1 {
-    color: #3423A3;
-    font-size: 79px;
-}
 
-.comilla2 {
-    color: #3423A3;
-    font-size: 79px;
+.fotoperfil {
+    border-radius: 46px;
+    border: 8px solid #3423A3; 
 }
+/* fin de SECCION 1*/
 
+
+/* SECCION 2*/
 .intereses {
-    border: 1px solid #3423A3;
-    color: white;
+    color: pink;
     background-color: black;
     display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.intereses div {
+    display: flex;
+    align-items: flex-start;
+    width: 69%;
+    gap: 174px;
 }
 
 .intereses h2 {
     font-family: 'Space-Grotesk', sans-serif;
-    font-size: 35px;
-    width: 314px;
-    height: 200px;
-    padding: 30px 12px 7px 0px;
-    margin-left: 35px;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .intereses p {
     font-family: 'Helvetica', sans-serif;
-    padding-top: 35px;
-    width: 430px;
-    height: 200px;
-    font-size: 20px;
+    font-size: 35px;
 
 }
 
@@ -212,7 +230,9 @@ aside p{
     flex-grow: 1;
     flex-basis: 0;
 }
+/* fin de SECCION 2*/
 
+/* SECCION 3*/
 .educacion {
     background-color: #D9D9D9;
     display: flex;
@@ -267,9 +287,10 @@ aside p{
     width: 447px;
     height: 50px;
 }
+/* fin de SECCION 3*/
 
+/* SECCION 4 HABILIDADES*/
 .habilidades {
-    /*border: 1px solid blue;*/
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -282,15 +303,12 @@ aside p{
     width: 335px;
     height: 123px;
     padding-left: 40px;
-    /*border: 1px solid blue;*/
-
 }
 
 .habilidades ul {
     text-transform: uppercase;
     font-family: 'Helvetica', sans-serif;
     list-style: none;
-    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,7 +327,6 @@ footer a {
     text-decoration: none;
     color:#ffffff;
     font-size: 30px;
-    /*border: 1px solid red;*/
     height: 100px;
     width: 750px;
     display: flex;
@@ -319,6 +336,5 @@ footer a {
 }
 
 footer img {
-    /*border: 1px solid red;*/
     width: 233px;
 }
