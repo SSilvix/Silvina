@@ -6,11 +6,6 @@
     padding: 0px;
 }
 
-body {
-    background-color: pink;
-    cursor: url(img/cursor.svg), auto;
-}
-
 @font-face {
     font-family: "Space-Grotesk";
     src: url("fonts/SpaceGrotesk-Regular.ttf") format('truetype');
@@ -31,6 +26,11 @@ body {
     src: url("fonts/Typodermic\ -\ Monofonto\ Regular.otf");
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    background-color: pink;
+    cursor: url(img/cursor.svg), auto;
 }
 
 /* HEADER*/
@@ -113,7 +113,7 @@ nav a {
     color: #3423A3;
     display: flex;
     justify-content: center;
-    height: 26vh;
+    height: 23vh;
     align-items: center;
 }
 
@@ -207,7 +207,7 @@ aside p{
     font-weight: bold;
     font-size: 25px;
     height: 50vh;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: #3423A3;
     display: flex;
     justify-content: center;
@@ -279,7 +279,7 @@ aside p{
     color:#3423A3;
     font-size: 27px;
     text-transform: uppercase;
-    width: 70%;
+    width: 90%;
 }
 
 .otrosdatos {
@@ -297,7 +297,7 @@ aside p{
 .habilidades {
     font-family: 'Space-Grotesk', sans-serif;
     background-color: #ffffff;
-    height: 50vh;
+    height: 64vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,10 +307,10 @@ aside p{
 
 .habilidades h2 {
     color: #3423A3;
-    border: 3px solid #3423A3;
-    border-radius: 50px;
-    font-size: 35px;
+    border: 5px solid #3423A3;
+    border-radius: 89px;
     padding: 20px 40px;
+    font-size: 4em;
 }
 
 .programas {
@@ -330,6 +330,9 @@ aside p{
     align-items: center;
     font-size: 25px;
     gap: 10px;
+    border: 5px solid #3423A3;
+    border-radius: 30px;
+    padding: 30px;
 }
 
 /* fin de SECCION 4*/
