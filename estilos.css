@@ -8,6 +8,7 @@
 
 body {
     background-color: pink;
+    cursor: url(img/cursor.svg), auto;
 }
 
 @font-face {
@@ -33,19 +34,24 @@ body {
 }
 
 /* HEADER*/
-.contenedordatos {
-    height: 41vh;
+
+header { 
+    height: 65vh;
     width: 100%;
-    font-family: 'Space-Grotesk', sans-serif;
-    color: pink;
     background-color: #3423A3;
+    color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Space-Grotesk', sans-serif;
 }
 
 #header-container {
-    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 header p {
@@ -53,8 +59,10 @@ header p {
 }
 
 h1 { 
-    font-size: 131px;
-    width: fit-content;
+    border: 10px dashed;
+    border-radius: 126px;
+    padding: 18px 60px;
+    font-size: 10em;
 }
 
 .subybotones {
@@ -62,7 +70,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    gap: 58px
 }
 
 .subtitulo {
@@ -79,24 +87,19 @@ header a {
 nav a {
     font-family: 'Monofonto', sans-serif;
     font-size: 20px;
-    list-style: none;
-    background-color: #3423a3;
-    text-decoration: none;
     padding: 20px 25px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-left: 25px;
     border-radius: 50px;
+    border: 3px;
+    border: solid;
 }
 
 .botonera a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.botonera a:hover {
-    color: white;
-    font-size: 14px;
-}
 
 /* fin de HEADER*/
 
@@ -105,13 +108,19 @@ nav a {
 /* SECCION 1*/
 
 .decoracion1 {
-    font-size: 150px;
+    font-size: 4em;
     font-family: 'Space-Grotesk', sans-serif;
-    font-weight: bold;
     color: #3423A3;
-    width: 100%;
-    background-color: pink;
-    margin-top: -85px;
+    display: flex;
+    justify-content: center;
+    height: 26vh;
+    align-items: center;
+}
+
+.decoracion1 span {
+    border: 5px solid #3423a3;
+    border-radius: 89px;
+    padding: 15px 50px;
 }
 
 .seccion1 {
@@ -167,7 +176,7 @@ aside p{
     color: pink;
     background-color: black;
     display: flex;
-    height: 30vh;
+    height: 20vh;
     align-items: center;
     justify-content: center;
 }
@@ -183,110 +192,105 @@ aside p{
     font-family: 'Space-Grotesk', sans-serif;
     font-size: 50px;
     text-transform: uppercase;
+    width: 9em;
 }
 
 .intereses p {
     font-family: 'Helvetica', sans-serif;
     font-size: 35px;
-
+    width: 25em;
 }
 
 .galeria {
-    height: 300px;
+    font-family: 'Space-Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    height: 50vh;
+    color: rgb(0, 0, 0);
     background-color: #3423A3;
-    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 4em;
 }
 
 .galeria img {
     border-radius: 50px;
     border: 5px solid #000000;
-
 }
 
-.piedefotos {
-    background-color: #3423A3;
-    font-weight: bold;
-    color: white;
-    font-family: 'Space-Grotesk', sans-serif;
-    text-transform: uppercase;
+.imagen1 {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.sub1 {
-    flex-grow: 1;
-    flex-basis: 0;
+.imagen2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.sub2 {
-    flex-grow: 1;
-    flex-basis: 0;
+.imagen3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.sub3 {
-    flex-grow: 1;
-    flex-basis: 0;
-}
 /* fin de SECCION 2*/
 
 /* SECCION 3*/
 .educacion {
-    background-color: #D9D9D9;
+    background-color: pink;
+    height: 40vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .conteducacion {
     display: flex;
+    align-items: flex-start;
+    width: 67%;
 }
 
 .conteducacion h2 {
-    width: 340px;
-    height: 100px;
-    font-size: 35px;
+    font-family: 'Space-Grotesk', sans-serif;
     color:#3423A3;
-    padding-top: 27px;
-    padding-left: 35px;
-    font-family: 'Space-Grotesk';
-
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 9em;
 }
 
 .conteducacion p {
-    width: 450px;
-    height: 145px;
-    padding-top: 27px;
-    font-size: 20px;
     font-family: 'Helvetica', sans-serif;
-
+    font-size: 35px;
+    width: 25em;
 }
-
-.educacion article {
-    width: 1300;
-    height: 40px;
-    display: flex;
-
-}
-
 
 .educacion h4 {
+    font-family: 'Space-Grotesk';
     color:#3423A3;
-    font-size: 20px;
-    font-family: 'Space-Grotesk', sans-serif;
-    width: 335px;
-    height: 40px;
-    padding-left: 40px;
+    font-size: 27px;
+    text-transform: uppercase;
+    width: 70%;
 }
 
-.otrosdatos p {
-    font-style: italic;
-    font-size: 14px;
+.otrosdatos {
     font-family: 'Helvetica', sans-serif;
-    width: 447px;
-    height: 50px;
+    font-size: 25px;
+    display: flex;
+    width: 67%;
 }
+
+
+
 /* fin de SECCION 3*/
 
 /* SECCION 4 HABILIDADES*/
@@ -315,26 +319,41 @@ aside p{
     height: 150px;
 
 }
+/* fin de SECCION 4*/
 
+/* FOOTER */
 footer {
+    color: pink;
     background-color: #000000;
     display: flex;
     align-items: center;
+    height: 56vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
 }
+
+footer h2 {
+    font-family: 'Space-Grotesk', sans-serif;
+    font-size: 7em;
+    text-transform: uppercase;
+}
+
 
 footer a {
     font-family: 'Monofonto', sans-serif;
+    font-size: 20px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 25px;
+    border-radius: 50px;
+    border: 3px;
+    border: solid;
     text-decoration: none;
-    color:#ffffff;
-    font-size: 30px;
-    height: 100px;
-    width: 750px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 5px;
-    justify-content: center;
+    color: pink;
 }
 
-footer img {
-    width: 233px;
+footer a:hover {
+    background-color:#3423A3;
 }
