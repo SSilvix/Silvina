@@ -35,13 +35,72 @@ body {
 
 h1 { 
     font-family: "Space-Grotesk", sans-serif;
-    font-size: 165px;
+    font-size: 11rem;
+    text-transform: uppercase;
 }
 
 /* INDEX-INICIO*/
 #index {
+    background-color: #3423A3;
+    color: #FF8FA7;
+    width: 100%;
+    height: 1080px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1920px;
+
 }
+
+.flor-giratoria {
+    width: 420px;
+    height: 100%;
+    animation-name: flor;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@keyframes flor{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.paquete1 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index p {
+    font-family: "Monofonto", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    padding: 0px 0px 20px 0px;
+}
+
+.pagina-principal { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comenzar {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Monofonto', sans-serif;
+    color: #FF8FA7;
+    border-radius: 40px;
+    border: 3px solid #FF8FA7;
+    padding: 13px 43px;
+}
+
 
 
 
