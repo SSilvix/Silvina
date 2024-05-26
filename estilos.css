@@ -33,6 +33,22 @@ body {
     cursor: url(img/cursor.svg), auto;
 }
 
+h1 { 
+    font-family: "Space-Grotesk", sans-serif;
+    font-size: 165px;
+}
+
+/* INDEX-INICIO*/
+#index {
+    display: flex;
+}
+
+
+
+
+
+
+
 
 /* HEADER*/
 
