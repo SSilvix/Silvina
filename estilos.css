@@ -31,6 +31,9 @@
 body {
     background-color: pink;
     cursor: url(img/cursor.svg), auto;
+    width: 100%;
+    min-width: 1920px; /* no estoy segura de estar aplicando bien esto*/
+
 }
 
 h1 { 
@@ -43,19 +46,34 @@ h2 {
     font-family: 'Space-Grotesk', sans-serif;
     font-size: 6.875rem;
     text-transform: uppercase;
-    
+}
+
+h3{
+    font-size: 70px;
+    font-family: 'Monofonto', sans-serif;
+    text-transform: uppercase;
 }
 
 h4{
     font-family: 'Monofonto', sans-serif;
-    font-size: 70px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 h5{
     font-family: 'Monofonto', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
+h2, h3, h4, h5 {
+    color: #3423A3;
+}
+
+p{
+    color:#3423A3;
+    font-family: 'Helvetica', sans-serif;
+}
 
 .botones {
     font-size: 1.3rem;
@@ -67,11 +85,6 @@ h5{
     border: 1px solid #FF8FA7;
     border-radius: 2em;
 }
-
-main {
-    padding-left: 5rem;
-}
-
 
 /* ------------------INDEX-INICIO------------------*/
 #index {
@@ -143,13 +156,9 @@ main {
 
 /* -------------SOBRE-MI------------------*/
 
-/*header { 
-    height: 42vh;
-    width: 100%;
-    background-color: #3423A3;
-    color: #FF8FA7;
-    padding: 7rem 0rem 0rem 5rem;
-}*/
+header {
+    padding-left: 5rem;
+}
 
 #header-sobremi {
     background-color: #3423A3;
@@ -157,8 +166,13 @@ main {
     padding: 7rem 0rem 0rem 5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    padding-bottom: 3rem;
+    gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.fotoperfil {
+    border: 6px solid #3423a3;
+    border-radius: 3em;
 }
 
 .contenedor-nav {
@@ -167,17 +181,35 @@ main {
 }
 
 #subtitulo-header {
+    color:#FF8FA7;
     font-family: 'Monofonto', sans-serif;
     font-size: 2.3rem;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 2rem;
+    letter-spacing: 1.9rem;
     text-transform: uppercase;
 }
 
 .botonera {
     display: flex;
     gap: 2rem;
+}
+
+.seccion1 {
+    padding-left: 5rem;
+}
+
+.seccion2{
+    background-color: #FF8FA7;
+    padding-left: 5rem;
+    background-color: #FF8FA7;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-hover {
+    display: flex;
 }
 
 
@@ -226,11 +258,10 @@ main {
 /*------------------ FOOTER------------------ */
 footer {
     background-color: black;
-    color: #FF8FA7;
     display: flex;
-    padding: 3rem 15rem 3rem 10rem;
+    padding: 3rem 8rem 3rem 5rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #redes-sociales {
