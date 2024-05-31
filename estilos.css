@@ -82,7 +82,7 @@ h1 {
     font-size: 3rem;
     letter-spacing: 20px;
     text-transform: uppercase;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 30px 0px;
 }
 
 .pagina-principal { 
@@ -105,45 +105,114 @@ h1 {
 /* ------------------INDEX-final------------------*/
 
 
-
-
-/* -------------HEADER------------------*/
-
-header { 
-    height: 65vh;
-    width: 100%;
-    background-color: #3423A3;
-    color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
     font-family: 'Space-Grotesk', sans-serif;
+    font-size: 10rem;
 }
 
 
+.botones {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#FF8FA7;
+    text-transform: uppercase;
+    font-family: 'Monofonto', sans-serif;
+    padding: 1rem;
+    border: 1px solid #FF8FA7;
+    border-radius: 2em;
+}
 
-/* fin de HEADER*/
-
-
-
-/* SECCION 1*/
-
-
-/* fin de SECCION 2*/
-
-/* SECCION 3*/
-
-/* fin de SECCION 3*/
-
-
-
-/* SECCION 4 HABILIDADES*/
+main {
+    padding-left: 5rem;
+}
 
 
-/* fin de SECCION 4*/
+/* -------------SOBRE-MI------------------*/
+
+/*header { 
+    height: 42vh;
+    width: 100%;
+    background-color: #3423A3;
+    color: #FF8FA7;
+    padding: 7rem 0rem 0rem 5rem;
+}*/
+
+#header-sobremi {
+    background-color: #3423A3;
+    color: #FF8FA7;
+    padding: 7rem 0rem 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contenedor-nav {
+    display: flex;
+    gap: 3rem;
+}
+
+#subtitulo-header {
+    font-family: 'Monofonto', sans-serif;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+}
+
+.botonera {
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* ------------- fin SOBRE-MI------------------*/
 
 
 
 
-/* FOOTER */
+/* -------------CONTACTO------------------*/
+.page-contacto {
+    background-color: #D2CCFA;
+}
 
+#header-contacto {
+    width: 100%;
+    padding: 7rem 0rem 0rem 5rem;
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.boton-contacto {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#3423A3;
+    text-transform: uppercase;
+    font-family: 'Monofonto', sans-serif;
+    padding: 1rem;
+    border: 1px solid #3423A3;
+    border-radius: 2em;
+}
+
+/* -------------fin CONTACTO------------------*/
+
+/* -------------GALERIA------------------*/
+
+
+
+/*------------------ FOOTER------------------ */
+footer {
+    background-color: black;
+    color: #FF8FA7;
+    display: flex;
+    padding: 3rem 15rem 3rem 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#redes-sociales {
+    display: flex;
+    gap: 35px;
+}
