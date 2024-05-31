@@ -39,6 +39,40 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-family: 'Space-Grotesk', sans-serif;
+    font-size: 6.875rem;
+    text-transform: uppercase;
+    
+}
+
+h4{
+    font-family: 'Monofonto', sans-serif;
+    font-size: 70px;
+}
+
+h5{
+    font-family: 'Monofonto', sans-serif;
+    font-size: 40px;
+}
+
+
+.botones {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#FF8FA7;
+    text-transform: uppercase;
+    font-family: 'Monofonto', sans-serif;
+    padding: 1rem;
+    border: 1px solid #FF8FA7;
+    border-radius: 2em;
+}
+
+main {
+    padding-left: 5rem;
+}
+
+
 /* ------------------INDEX-INICIO------------------*/
 #index {
     background-color: #3423A3;
@@ -105,26 +139,6 @@ h1 {
 /* ------------------INDEX-final------------------*/
 
 
-h2 {
-    font-family: 'Space-Grotesk', sans-serif;
-    font-size: 10rem;
-}
-
-
-.botones {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color:#FF8FA7;
-    text-transform: uppercase;
-    font-family: 'Monofonto', sans-serif;
-    padding: 1rem;
-    border: 1px solid #FF8FA7;
-    border-radius: 2em;
-}
-
-main {
-    padding-left: 5rem;
-}
 
 
 /* -------------SOBRE-MI------------------*/
@@ -199,6 +213,13 @@ main {
 /* -------------fin CONTACTO------------------*/
 
 /* -------------GALERIA------------------*/
+.page-galeria{
+    background-color: #3423A3;
+}
+
+
+
+/* -------------fin GALERIA------------------*/
 
 
 
