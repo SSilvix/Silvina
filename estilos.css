@@ -52,18 +52,21 @@ h3{
     font-size: 70px;
     font-family: 'Monofonto', sans-serif;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 h4{
     font-family: 'Monofonto', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 h5{
     font-family: 'Monofonto', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 h2, h3, h4, h5 {
@@ -79,7 +82,7 @@ h2, h3, h4, h5 {
 .textos-lectura-24px{
     color:#3423A3;
     font-family: 'Helvetica', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .botones {
@@ -203,17 +206,84 @@ h2, h3, h4, h5 {
     padding-left: 5rem;
 }
 
-.seccion2{
-    background-color: #FF8FA7;
-    padding-left: 5rem;
-    background-color: #FF8FA7;
-    padding-left: 5rem;
+
+.info-principal{
+    width: 85%;
+    /* height: 71vh; */
+    display: flex;
+    padding: 4em 0em 4em 0em;
+    gap: 2rem;
+}
+
+.titulo-quiensoy{
+    padding: 1em 0em;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    gap: 1em;
+}
+
+.paquetes-textos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+
+.paquetes-textos2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imgs-habilidades {
+    display: flex;
+    gap: 1rem;
+}
+
+.seccion2{
+    background-color: #FF8FA7;
+    /* padding-left: 5rem; */
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 15rem 5rem 5rem;
+    gap: 2rem;
 }
 
 .titulos-hover {
     display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ilustraciones:hover{
+    background-color: #D2CCFA;
+    transition: 1s;
+}
+
+.personajes:hover{
+    background-color: #D2CCFA;
+    transition: 1s;
+}
+
+.diseno-grafico:hover{
+    background-color: #D2CCFA;
+    transition: 1s;
+}
+
+.lettering:hover{
+    background-color: #D2CCFA;
+    transition: 1s;
+}
+
+.info-ilustracion{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -309,6 +379,22 @@ textarea{
     background-color: #3423A3;
 }
 
+#ilustraciones, #personajes, #p-galeria{
+    color: #FF8FA7;
+}
+
+#p-galeria{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;}
+
+.seccion-galeria{
+    padding: 0rem 0rem 4rem 5rem;
+}
+
+.apertura-galeria{ width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;}
 
 
 /* -------------fin GALERIA------------------*/
