@@ -23,11 +23,57 @@
         </div>
     </header>
     <main>
-        <h2>Contáctame!</h2>
-        <form  method="post" action="" target="_blank" enctype="text/plain">
-            <input type="text" name="Nombre" id="nombre" placeholder="Jane Austen">
+        <section>
+            <article>
+                <h2>Contáctame!</h2>
+                <p class="textos-lectura-30px">¿Querés trabajar conmigo? Escribime y te estaré contactando en los próximos días.</p>
+            </article>
+            <form  method="post" action="mailto:silvinavictoriasanchez@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+                <div>
+                    <label for="Nombre">* nombre y apellido</label>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Jane Austen" required>
 
-        </form>
+                    <label for="Nombre">* empresa o particular</label>
+                    <input type="text" name="Nombre" id="nombre-empresa" placeholder="Emprendimiento pirulito" required>
+                </div>
+
+                <div>
+                    <label for="email">* correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="janeausten@gmail.com" required>
+
+                    <label for="tel">teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="11-1234-5678">
+                </div>
+                
+                <div>
+                    <label for="mensaje">mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+
+                    <div class="botones-form">
+                        <input class="botones-1y2" type="reset" value="Borrar todo">
+                        <input class="botones-1y2" type="submit" value="Enviar" formenctype="text/plain">
+                    </div>
+                </div>        
+            </form>
+
+            <article>
+                <p class="textos-lectura-24px">*  los campos con asteriscos son obligatorios!</p>
+            </article>
+
+        </section>
+
     </main>
 </body>
+
+<footer id="footer">
+    <h5 id="titulo-footer">¡trabajemos juntxs!</h5>
+    <p class="texto-footer-20px">Derechos reservados. Copyright © 2024 Silvina Sánchez.
+        Buenos Aires, Argentina. Ciudad de Temperley.</p>
+    <div id="redes-sociales">
+        <img  src="img/linkedin-icono.svg" wight="40px" height="40px" alt="linkedin-icono"/>
+        <img  src="img/behance-icono.svg" wight="40px" height="40px" alt="linkedin-icono"/>
+        <img  src="img/instagram-icono.svg" wight="40px" height="40px" alt="linkedin-icono"/>
+    </div>
+</footer>
+
 </html>

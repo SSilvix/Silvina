@@ -70,9 +70,16 @@ h2, h3, h4, h5 {
     color: #3423A3;
 }
 
-p{
+.textos-lectura-30px{
     color:#3423A3;
     font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+}
+
+.textos-lectura-24px{
+    color:#3423A3;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
 }
 
 .botones {
@@ -156,9 +163,6 @@ p{
 
 /* -------------SOBRE-MI------------------*/
 
-header {
-    padding-left: 5rem;
-}
 
 #header-sobremi {
     background-color: #3423A3;
@@ -224,7 +228,6 @@ header {
 }
 
 #header-contacto {
-    width: 100%;
     padding: 7rem 0rem 0rem 5rem;
     display: flex;
     gap: 3rem;
@@ -242,6 +245,63 @@ header {
     border-radius: 2em;
 }
 
+.page-contacto section {
+    padding: 0rem 0rem 8rem 5rem;
+}
+
+form {
+    width: 84%;
+    display: flex;
+    color: #3423A3;
+    font-family: 'Monofonto';
+    font-size: 2em;
+    text-transform: uppercase;
+    gap: 2em;
+    padding: 2em 0em 0em 0em;
+}
+
+form div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.botones-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.botones-1y2 {
+    padding: 1em;
+    border-radius: 2em;
+}
+
+input{
+    background-color: white;
+    height: 74px;
+    border: 3px solid #3423A3;
+    border-radius: 36px;
+    font-family: 'Monofonto';
+    color: #3423A3;
+    font-size: 23px;
+    text-transform: uppercase;
+    padding: 0em 3em 0em 2em;
+}
+
+textarea{
+    height: 190px;
+    border-radius: 1em;
+    border: 3px solid #3423a3;
+    font-size: 1em;
+    padding: 20px 20px 20px 20px;
+    color: #3423a3;
+}
+
+
 /* -------------fin CONTACTO------------------*/
 
 /* -------------GALERIA------------------*/
@@ -256,12 +316,23 @@ header {
 
 
 /*------------------ FOOTER------------------ */
-footer {
+#footer {
+    color: #FF8FA7;
     background-color: black;
     display: flex;
     padding: 3rem 8rem 3rem 5rem;
     align-items: center;
-    justify-content: space-between;
+    gap: 16em;
+}
+
+#titulo-footer{
+    color: #FF8FA7;
+    font-weight: 100;
+}
+
+.texto-footer-20px{
+    color: #FF8FA7;
+    font-family: 'Helvetica', sans-serif;
 }
 
 #redes-sociales {
