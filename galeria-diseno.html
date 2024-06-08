@@ -7,18 +7,9 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 <body class="page-galeria">
-    <header id="header-sobremi">
+    <header id="header-galeria">
         <div class="contenedor-nav">
-            <a href="sobre-mi.html" target="_self">
-                <img src="img/favicon.svg" width="55px" height="55px" alt="flor.svg" />
-            </a>
-            <div>
-                <nav class="botonera">
-                    <a class="botones" href="galeria-ilus.html" target="_self">ilustraciones</a>
-                    <a class="botones" href="galeria-personajes.html" target="_self">personajes</a>
-                    <a class="botones" href="galeria-diseno.html" target="_self">diseño gráfico</a>
-                </nav>
-            </div>
+                <a href="intro-galeria.html" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
         </div>
 </header>
 
@@ -28,33 +19,105 @@
                 <h2 id="h2-rosa">diseño gráfico</h2>
                 <h4 class="h4-rosa">[is my passion?]</h4>
                 <p id="p-galeria">
-                    Los personajes son ejes fundamentales de mi trabajo, expresivos en su particularidad y con diseños pensados para cada escenario. 
+                    Desde el año 2020, me encuentro cursando la licenciatura en Diseño y Comunicación Visual en la Universidad Nacional de Lanús, a lo largo de la carrera disfruté mucho de hacer diseño pero realmente logré algo? Veánlo ustedes mismxs!
                 </p>
             </article>
         </section>
 
         <section id="galeria">
-            <div>
-                <a class="imagen1"><img  src="img/imagen-dibujo1.jpg" width="450px" height="450px" alt="imagen1"/>
-                <h4 class="h4-rosa">[animales]</h4></a>
+            <div class="contenedor-img-sub-galeria">
+                <a class="imagen1" href="#imagen1">
+                    <img src="img/img-diseno.jpg" width="450px" height="450px" alt="imagen1"/>
+                    <h4 class="h4-rosa">[diseño para sistema]</h4></a>
             </div>
 
             <div class="imagen2">
-                <a><img id="imagen-ancha" src="img/imagen-dibujo2.jpg" width="974px" height="456px" alt="imagen2"/><h4 class="h4-rosa">[animales caracterizados]</h4></a>
+                <a href="#imagen2">
+                <img id="imagen-ancha" src="img/img-diseno2.jpg" width="974px" height="456px" alt="imagen2"/>
+                <h4 class="h4-rosa">[floreciendo en masa]</h4></a>
             </div>
 
             <div>
-                <a class="imagen3"><img  src="img/imagen-dibujo3.jpg" width="450px" height="450px" alt="imagen3"/><h4 class="h4-rosa">[dibujo a lápiz]</h4></a>
+                <a href="#imagen3">
+                <img src="img/img-diseno3.jpg" width="450px" height="450px" alt="imagen3"/>
+                <h4 class="h4-rosa">[diseño de libro]</h4></a>
             </div>
 
             <div>
-                <a class="imagen4"><img  src="img/imagen-dibujo4.jpg" width="450px" height="450px" alt="imagen4"/><h4 class="h4-rosa">[tickets]</h4></a>
+                <a href="#imagen4"><img src="img/img-diseno4.jpg" width="450px" height="450px" alt="imagen4"/>
+                <h4 class="h4-rosa">[diseño de diario]</h4></a>
             </div>
 
             <div>
-                <a class="imagen5"><img  src="img/imagen-dibujo5.jpg" width="450px" height="450px" alt="imagen5"/><h4 class="h4-rosa">[yo animada!]</h4></a>
+                <a href="#imagen5"><img src="img/img-diseno5.jpg" width="450px" height="450px" alt="imagen5"/>
+                <h4 class="h4-rosa">[indumentaria]</h4></a>
             </div>
         </section>
+
+        <article class="light-box" id="imagen1">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen5" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/img-diseno-grande.jpg">
+                <a href="#imagen2" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>diseño para sistema</h4>
+                <p class="textos-lectura-24px">Ilustración parte de un sistema visual.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen2">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen1" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/img-diseno-grande2.jpg">
+                <a href="#imagen3" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>Floreciendo en masa</h4>
+                <p class="textos-lectura-24px">Diseño personalizado de identidad + logo.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen3">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen2" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/img-diseno-grande3.jpg">
+                <a href="#imagen4" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>Diseño de libro</h4>
+                <p class="textos-lectura-24px">Diseños de tapas de libros. (proyecto grupal)</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen4">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen3" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/img-diseno-grande4.jpg">
+                <a href="#imagen5" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>Tapa de diario</h4>
+                <p class="textos-lectura-24px">Diseño periodístico ficticio.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen5">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen4" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/img-diseno-grande5.jpg">
+                <a href="#imagen1" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>Indumentaria</h4>
+                <p class="textos-lectura-24px">En base a una ilustración propia.</p>
+            </div>
+        </article>
     </main>
 </body>
 

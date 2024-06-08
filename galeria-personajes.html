@@ -7,18 +7,9 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 <body class="page-galeria">
-    <header id="header-sobremi">
+    <header id="header-galeria">
         <div class="contenedor-nav">
-            <a href="sobre-mi.html" target="_self">
-                <img src="img/favicon.svg" width="55px" height="55px" alt="flor.svg" />
-            </a>
-            <div>
-                <nav class="botonera">
-                    <a class="botones" href="galeria-ilus.html" target="_self">ilustraciones</a>
-                    <a class="botones" href="galeria-personajes.html" target="_self">personajes</a>
-                    <a class="botones" href="galeria-diseno.html" target="_self">diseño gráfico</a>
-                </nav>
-            </div>
+                <a href="intro-galeria.html" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
         </div>
 </header>
 
@@ -26,7 +17,7 @@
         <section class="seccion-galeria">
             <article class="apertura-galeria">
                 <h2 id="h2-rosa">personajes</h2>
-                <h4 class="h4-rosa">[un proceso de autoconocimiento]</h4>
+                <h4 class="h4-rosa">[acerca de mis bichos]</h4>
                 <p id="p-galeria">
                     Los personajes son ejes fundamentales de mi trabajo, expresivos en su particularidad y con diseños pensados para cada escenario. 
                 </p>
@@ -34,27 +25,99 @@
         </section>
 
         <section id="galeria">
-            <div>
-                <a class="imagen1"><img  src="img/imagen-dibujo1.jpg" width="450px" height="450px" alt="imagen1"/>
-                <h4 class="h4-rosa">[animales]</h4></a>
+            <div class="contenedor-img-sub-galeria">
+                <a class="imagen1" href="#imagen1">
+                    <img src="img/imagen-dibujo1.jpg" width="450px" height="450px" alt="imagen1"/>
+                    <h4 class="h4-rosa">[animales]</h4></a>
             </div>
 
             <div class="imagen2">
-                <a><img id="imagen-ancha" src="img/imagen-dibujo2.jpg" width="974px" height="456px" alt="imagen2"/><h4 class="h4-rosa">[animales caracterizados]</h4></a>
+                <a href="#imagen2">
+                <img id="imagen-ancha" src="img/imagen-dibujo2.jpg" width="974px" height="456px" alt="imagen2"/>
+                <h4 class="h4-rosa">[animales caracterizados]</h4></a>
             </div>
 
             <div>
-                <a class="imagen3"><img  src="img/imagen-dibujo3.jpg" width="450px" height="450px" alt="imagen3"/><h4 class="h4-rosa">[dibujo a lápiz]</h4></a>
+                <a href="#imagen3">
+                <img src="img/imagen-dibujo3.jpg" width="450px" height="450px" alt="imagen3"/>
+                <h4 class="h4-rosa">[dibujo a lápiz]</h4></a>
             </div>
 
             <div>
-                <a class="imagen4"><img  src="img/imagen-dibujo4.jpg" width="450px" height="450px" alt="imagen4"/><h4 class="h4-rosa">[tickets]</h4></a>
+                <a href="#imagen4"><img src="img/imagen-dibujo4.jpg" width="450px" height="450px" alt="imagen4"/>
+                <h4 class="h4-rosa">[tickets]</h4></a>
             </div>
 
             <div>
-                <a class="imagen5"><img  src="img/imagen-dibujo5.jpg" width="450px" height="450px" alt="imagen5"/><h4 class="h4-rosa">[yo animada!]</h4></a>
+                <a href="#imagen5"><img src="img/imagen-dibujo5.jpg" width="450px" height="450px" alt="imagen5"/>
+                <h4 class="h4-rosa">[yo animada!]</h4></a>
             </div>
         </section>
+
+        <article class="light-box" id="imagen1">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen5" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/dibujo1-grande.jpg">
+                <a href="#imagen2" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>homenaje</h4>
+                <p class="textos-lectura-24px">Dibujo de Simón en acrílico.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen2">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen1" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/dibujo2-grande.jpg">
+                <a href="#imagen3" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>pedido</h4>
+                <p class="textos-lectura-24px">Dibujo a pedido.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen3">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen2" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/dibujo3-grande.jpg">
+                <a href="#imagen4" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>Flores</h4>
+                <p class="textos-lectura-24px">Dibujo a lápiz de Capuchinas.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen4">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen3" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/dibujo4-grande.jpg">
+                <a href="#imagen5" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>tickets</h4>
+                <p class="textos-lectura-24px">Dibujo sobre ticket de compra.</p>
+            </div>
+        </article>
+
+        <article class="light-box" id="imagen5">
+            <article class="contenedor-img-galeria">
+                <a href="#imagen4" class="next"><img src="img/flecha-izquierda.svg" width="50px" height="50px" alt="flecha"></a>
+                <img src="img/dibujo5-grande.jpg">
+                <a href="#imagen1" class="next"><img src="img/flecha-derecha.svg" width="50px" height="50px" alt="flecha"></a>
+                <a href="" class="close"><img src="img/boton-x.svg" width="50px" height="50px" alt="boton-cerrar"></a>
+            </article>
+            <div>
+                <h4>yo animada!</h4>
+                <p class="textos-lectura-24px">Un retrato de mí misma!</p>
+            </div>
+        </article>
     </main>
 </body>
 
