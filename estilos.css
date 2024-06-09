@@ -452,12 +452,12 @@ textarea{
     gap: 1rem;
 }
 
-#h2-rosa, .h4-rosa, #p-galeria{
+#h2-rosa, .h4-rosa, .p-galeria{
     color: #FF8FA7;
     padding: 19px 0px 10px 0px;
 }
 
-#p-galeria{
+.p-galeria{
     font-family: 'Helvetica', sans-serif;
     font-size: 30px;}
 
@@ -478,7 +478,7 @@ textarea{
     gap: 52px;
     padding-left: 5rem;
     grid-template: repeat(2, 1fr) / 1fr 1fr 1fr;
-    margin-bottom: 19rem;
+    margin-bottom: 6rem;
 }
 
 #galeria a{
@@ -546,6 +546,24 @@ textarea{
     position: absolute;
     top: 40px;
     right: 40px;
+}
+
+.apertura-galeria2{
+    width: 80%;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.linea-separacion{
+    border-bottom: 3px solid rgb(255, 143, 167);
+    width: 100%;
+    height: 3px;
+}
+
+video{
+    border: 3px solid pink;
+    border-radius: 50px
 }
 
 /* -------------fin GALERIA------------------*/
