@@ -100,18 +100,26 @@ h2, h3, h4, h5 {
 #index {
     background-color: #3423A3;
     color: #FF8FA7;
-    width: 100%;
-    height: 1080px;
+    /* width: 100%; */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 1920px;
-
 }
 
 .flor-giratoria {
     width: 420px;
     height: 100%;
+    animation-name: flor;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+.flor-giratoria-nav {
+    width: 55px;
+    height: 55px;
     animation-name: flor;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -158,6 +166,9 @@ h2, h3, h4, h5 {
     border: 3px solid #FF8FA7;
     padding: 13px 43px;
 }
+.comenzar:hover{
+    background-color: black;
+}
 
 /* ------------------INDEX-final------------------*/
 
@@ -170,11 +181,11 @@ h2, h3, h4, h5 {
 #header-sobremi {
     background-color: #3423A3;
     color: #FF8FA7;
-    padding: 7rem 0rem 0rem 5rem;
-    display: flex;
+    padding: 71px 0rem 0rem 80px;
+    /* display: flex; */
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 40px;
 }
 
 .fotoperfil {
@@ -184,7 +195,8 @@ h2, h3, h4, h5 {
 
 .contenedor-nav {
     display: flex;
-    gap: 3rem;
+    gap: 40px;
+    align-items: center;
 }
 
 #subtitulo-header {
@@ -203,11 +215,12 @@ h2, h3, h4, h5 {
 }
 
 .botones:hover{
+    transition: ease 300ms;
     background-color: rgb(0, 0, 0);
 }
 
 .seccion1 {
-    padding-left: 5rem;
+    padding-left: 70px;
 }
 
 
@@ -215,8 +228,8 @@ h2, h3, h4, h5 {
     width: 85%;
     /* height: 71vh; */
     display: flex;
-    padding: 4em 0em 4em 0em;
-    gap: 2rem;
+    padding: 50px 0px 50px 0px;
+    gap: 20px;
 }
 
 .titulo-quiensoy{
@@ -247,11 +260,10 @@ h2, h3, h4, h5 {
 
 .seccion2{
     background-color: #FF8FA7;
-    /* padding-left: 5rem; */
     display: flex;
     flex-direction: column;
-    padding: 4rem 15rem 5rem 5rem;
-    gap: 2rem;
+    padding: 50px 0px 50px 80px;
+    gap: 20px;
 }
 
 .titulos-hover {
@@ -390,10 +402,10 @@ textarea{
 
 /* -------------intro GALERIA------------------*/
 .animacion-galeria{
-    background-image: url(img/flor1.svg);
+    background-image: url(img/icons/flor1.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    animation: flor-animada alternate 1s infinite ease-in-out;
+    animation: flor-animada alternate 2s infinite ease-in-out;
     animation-play-state: running;
     animation-timing-function: linear;
 }
@@ -402,21 +414,26 @@ textarea{
     0% {
         width: 1500px;
         height: 660px;
-        background-image: url(img/flor1.svg);
+        background-image: url(img/icons/flor1.svg);
     }
 
     100%{
         width: 1500px;
         height: 660px;
-        background-image: url(img/flor2.svg);
+        background-image: url(img/icons/flor2.svg);
     }
 
     /*100%{
-        position: relative;
         width: 1500px;
         height: 660px;
-        background-image: url(img/flor3.svg);
-    }*/
+        background-image: url(img/icons/flor3.svg);*/
+    }
+.page-intro-galeria{
+    background-color: rgb(210, 204, 250);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center
 }
 
 .botonera-galeria{
@@ -429,8 +446,6 @@ textarea{
 
 #contenedor-animacion{
     display: flex;
-    width: 100%;
-    padding: 7em 0em;
     flex-direction: column;
     align-items: center;
 }
@@ -486,16 +501,16 @@ textarea{
     position: relative;
 }
 
+#galeria img{
+    border-radius: 50px;
+    filter: grayscale(1);
+    border: 3px solid rgb(255, 143, 167);
+}
+
 #galeria a:hover img{
     transform: scale(1.1);
     overflow: hidden;
-    filter: blur(0px);
-}
-
-#galeria img{
-    border-radius: 50px;
-    filter: blur(1px);
-    border: 3px solid rgb(255, 143, 167);
+    filter: grayscale(0);
 }
 
 .imagen2{
@@ -575,7 +590,7 @@ video{
     color: #FF8FA7;
     background-color: black;
     display: flex;
-    padding: 3rem 8rem 3rem 5rem;
+    padding: 40px 80px 30px 90px;
     align-items: center;
     gap: 15em;
 }
