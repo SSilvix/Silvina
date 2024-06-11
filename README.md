@@ -1,9 +1,9 @@
-# Primer TP web / Individual - Silvina Sánchez
-Hola! Este es mi trabajo web, quería comentar que el mayor inconveniente que tuve está relacionado con los anchos y altos de pantalla, me costó implementar valores para dichos atributos, más hacia el final del html/css fui comprendiéndolo mejor. Sé que hay cosas que pueden mejorar pero aún así, estoy contenta con como resultó mi primer web.
+# TP Individual / Segunda parte (preentrega) - Silvina Sánchez
+Hola! Este es mi trabajo web! Quería comentar que al igual que en el primer trabajo práctico individual, me siguen costando los anchos y altos de ciertos elementos pero creo que en esa etapa lo he logrado mejor y de manera más prolija. Me gustaría saber si voy bien en este punto. 
 
 ## Descripciones generales
 Para hacer este trabajo utilicé VISUAL ESTUDIO CODE, trabajé en una pantalla de 1366px/768px. 
 
 ### Link a figma
-Quiero aclarar que en primer instancia el figma me sirvió para bocetar el diseño pero ya en esta ultima semana no lo actualicé. De igual manera, lo dejo a modo de constancia del trabajo realizado en esta plataforma a lo largo del trabajo práctico. 
+Estuve trabajando bastante en figma en principio para saber cómo y por donde quería ir para hacer mi web pero después lo fui dejando de lado. 
 https://www.figma.com/file/oBeleeXZIfvcS51XKJTBHH/CV-Silvina-S%C3%A1nchez?type=design&node-id=0%3A1&mode=design&t=vsrvmly1sq8OpgsM-
