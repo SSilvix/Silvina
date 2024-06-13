@@ -4,6 +4,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -30,16 +31,13 @@
 
 body {
     background-color: pink;
-    cursor: url(img/cursor.svg), auto;
-    width: 100%;
-    min-width: 1920px; /* no estoy segura de estar aplicando bien esto*/
-
+    cursor: url(img/icons/cursor.svg), auto;
 }
 
 h1 { 
     font-family: "Space-Grotesk", sans-serif;
-    font-size: 12rem;
-    text-transform: uppercase;
+    font-size: 10rem;
+    text-transform: uppercase;    
 }
 
 h2 {
@@ -88,28 +86,30 @@ h2, h3, h4, h5 {
 .botones {
     font-size: 1.3rem;
     text-decoration: none;
-    color:#FF8FA7;
+    color: #FF8FA7;
     text-transform: uppercase;
     font-family: 'Monofonto', sans-serif;
-    padding: 1rem;
     border: 1px solid #FF8FA7;
     border-radius: 2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
 }
 
 /* ------------------INDEX-INICIO------------------*/
 #index {
     background-color: #3423A3;
     color: #FF8FA7;
-    /* width: 100%; */
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .flor-giratoria {
-    width: 420px;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     animation-name: flor;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -140,6 +140,7 @@ h2, h3, h4, h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #index p {
@@ -148,17 +149,21 @@ h2, h3, h4, h5 {
     letter-spacing: 20px;
     text-transform: uppercase;
     padding: 0px 0px 30px 0px;
+    text-align: center;
 }
 
 .pagina-principal { 
-    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
 }
 
 .comenzar {
     font-size: 2rem;
-    text-decoration: none;
     font-family: 'Monofonto', sans-serif;
     text-transform: uppercase;
     color: #FF8FA7;
@@ -176,15 +181,11 @@ h2, h3, h4, h5 {
 
 
 /* -------------SOBRE-MI------------------*/
-
-
 #header-sobremi {
     background-color: #3423A3;
     color: #FF8FA7;
+    width: 100%;
     padding: 71px 0rem 0rem 80px;
-    /* display: flex; */
-    flex-direction: column;
-    gap: 1rem;
     padding-bottom: 40px;
 }
 
@@ -608,4 +609,263 @@ video{
 #redes-sociales {
     display: flex;
     gap: 35px;
+}
+
+/*------------------ fin FOOTER------------------ */
+
+/*------------------ mediaqueries------------------ */
+
+@media screen and (max-width:600px){
+    #index {
+        background-color: #3423A3;
+        color: #FF8FA7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flor-giratoria {
+        width: 90px;
+        height: 100%;
+        animation-name: flor;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: inline-block;
+    }
+    
+    .flor-giratoria {
+        width: 90px;
+        height: 90px;
+        animation-name: flor;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: inline-block;
+    }
+    
+    @keyframes flor{
+        from{
+            transform: rotate(360deg);
+        }
+        to{
+            transform: rotate(0deg);
+        }
+    }
+
+    h1{
+        font-family: "Space-Grotesk", sans-serif;
+        font-size: 90px;
+        text-transform: uppercase;
+        line-height: 100px;
+    }
+
+    .paquete1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #index p {
+        font-family: "Monofonto", sans-serif;
+        font-size: 34px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 10px 0px 20px 0px;
+        line-height: 50px;
+        text-wrap: balance;
+    }
+    
+    .pagina-principal { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comenzar {
+        font-size: 22px;
+        text-decoration: none;
+        font-family: Monofonto, sans-serif;
+        text-transform: uppercase;
+        color: rgb(255, 143, 167);
+        border-radius: 40px;
+        border: 3px solid rgb(255, 143, 167);
+        padding: 13px 43px;
+    }
+    .comenzar:hover{
+        background-color: black;
+    }
+
+/*sobre mi ---------*/
+
+    #header-sobremi {
+        background-color: #3423A3;
+        color: #FF8FA7;
+        padding: 55px 0rem 0rem 30px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        font-family: "Space-Grotesk", sans-serif;
+        font-size: 79px;
+        text-transform: uppercase;
+        line-height: 92px;
+        padding: 20px 0px 5px 0px;
+    }
+    
+    .fotoperfil {
+        border: 6px solid #3423a3;
+        border-radius: 3em;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .contenedor-nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    #subtitulo-header {
+        color: #FF8FA7;
+        font-family: 'Monofonto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+    
+    .titulo-sub{
+        width: 63%;
+    }
+    .botonera {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .botones{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #FF8FA7;
+        text-transform: uppercase;
+        font-family: 'Monofonto', sans-serif;
+        padding: 1rem;
+        border: 1px solid #FF8FA7;
+        border-radius: 2em;
+        text-align: center;
+    }
+
+    .botones:hover{
+        transition: ease 300ms;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .seccion1 {
+        padding-left: 30px;
+    }
+    
+    
+    .info-principal{
+        display: flex;
+        padding: 38px 0px 50px 0px;
+        gap: 2px;
+        flex-direction: column;
+    }
+    
+    .titulo-quiensoy{
+        width: 73%;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-family: 'Monofonto', sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    h4 {
+        font-family: 'Monofonto', sans-serif;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    .textos-lectura-30px {
+        color: #3423A3;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 20px;
+    }
+
+    .textos-lectura-24px {
+        color: #3423A3;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 17px;
+    }
+    
+    .paquetes-textos{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        gap: 2rem;
+    }
+    
+    .paquetes-textos2{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .imgs-habilidades {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .seccion2{
+        background-color: #FF8FA7;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px 50px 80px;
+        gap: 20px;
+    }
+    
+    .titulos-hover {
+        display: flex;
+        gap: 30px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .ilustraciones:hover{
+        background-color: #D2CCFA;
+        transition: 1s;
+    }
+    
+    .personajes:hover{
+        background-color: #D2CCFA;
+        transition: 1s;
+    }
+    
+    .diseno-grafico:hover{
+        background-color: #D2CCFA;
+        transition: 1s;
+    }
+    
+    .lettering:hover{
+        background-color: #D2CCFA;
+        transition: 1s;
+    }
+    
+    .info-ilustracion{
+        width: 59%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
