@@ -183,11 +183,9 @@ h2, h3, h4, h5 {
 
 /* -------------SOBRE-MI------------------*/
 #header-sobremi {
-    background-color: #3423A3;
-    color: #FF8FA7;
-    width: 100%;
-    padding: 71px 0rem 0rem 80px;
-    padding-bottom: 40px;
+    background-color: rgb(52, 35, 163);
+    color: rgb(255, 143, 167);
+    padding: 55px 70px 32px;
 }
 
 #contenedor-imagen{
@@ -203,7 +201,7 @@ h2, h3, h4, h5 {
 
 #flor-superior-derecha{
     position: absolute;
-    top: 49em;
+    top: 47em;
 }
 
 .flor-giratoria-perfil{
@@ -746,10 +744,9 @@ video{
 
     h1 {
         font-family: "Space-Grotesk", sans-serif;
-        font-size: 121px;
+        font-size: 100px;
         text-transform: uppercase;
-        line-height: 144px;
-        padding: 20px 0px 5px 0px;
+        line-height: 112px;
     }
     
     .fotoperfil {
@@ -790,12 +787,7 @@ video{
 
     #flor-superior-derecha {
         position: absolute;
-        top: 62em;
-    }
-    
-    .titulo-sub{
-        width: 100%;
-        padding: 23px 0px;
+        top: 60em;
     }
 
     .botonera {
@@ -838,7 +830,7 @@ video{
     }
 
     h3 {
-        font-size: 60px;
+        font-size: 54px;
         font-family: 'Monofonto', sans-serif;
         text-transform: uppercase;
         font-weight: 100;
@@ -853,7 +845,7 @@ video{
 
     h2 {
         font-family: 'Space-Grotesk', sans-serif;
-        font-size: 4em;
+        font-size: 3.5em;
         text-transform: uppercase;
     }
 
@@ -935,6 +927,12 @@ video{
         flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .texto-footer-20px {
+        color: #FF8FA7;
+        font-family: 'Helvetica', sans-serif;
+        width: 56%;
     }
     
 }
