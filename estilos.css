@@ -415,6 +415,10 @@ textarea{
 /* -------------fin CONTACTO------------------*/
 
 /* -------------intro GALERIA------------------*/
+#main-intro-galeria{
+    width: 100%;
+}
+
 .animacion-galeria{
     background-image: url(img/icons/flor1.svg);
     background-size: 100%;
@@ -426,17 +430,18 @@ textarea{
 
 @keyframes flor-animada{
     0% {
-        width: 1500px;
+        width: 80%;
         height: 660px;
         background-image: url(img/icons/flor1.svg);
     }
 
     100%{
-        width: 1500px;
+        width: 80%;
         height: 660px;
         background-image: url(img/icons/flor2.svg);
     }
     }
+
 .page-intro-galeria{
     background-color: rgb(210, 204, 250);
     display: flex;
@@ -512,12 +517,12 @@ textarea{
 
 #galeria {
     height: fit-content;
-    width: 77%;
     display: grid;
-    gap: 52px;
+    gap: 32px;
+    width: 82%;
     padding-left: 5rem;
     grid-template: repeat(2, 1fr) / 1fr 1fr 1fr;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 
 #galeria a{
@@ -599,6 +604,10 @@ textarea{
 video{
     border: 3px solid pink;
     border-radius: 50px
+}
+
+#flecha-arriba{
+    padding: 0px 0px 41px 95px;
 }
 
 /* -------------fin GALERIA------------------*/
