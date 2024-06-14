@@ -37,12 +37,13 @@ body {
 h1 { 
     font-family: "Space-Grotesk", sans-serif;
     font-size: 10rem;
-    text-transform: uppercase;    
+    padding: 20px 0px;
+    text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Space-Grotesk', sans-serif;
-    font-size: 6.875rem;
+    font-size: 5em;
     text-transform: uppercase;
 }
 
@@ -72,15 +73,17 @@ h2, h3, h4, h5 {
 }
 
 .textos-lectura-30px{
-    color:#3423A3;
+    color: #3423A3;
     font-family: 'Helvetica', sans-serif;
     font-size: 30px;
+    line-height: 41px;
 }
 
 .textos-lectura-24px{
-    color:#3423A3;
+    color: #3423A3;
     font-family: 'Helvetica', sans-serif;
     font-size: 24px;
+    line-height: 31px;
 }
 
 .botones {
@@ -92,9 +95,7 @@ h2, h3, h4, h5 {
     border: 1px solid #FF8FA7;
     border-radius: 2em;
     text-align: center;
-    display: flex;
-    align-items: center;
-    padding: 0px 10px;
+    padding: 15px 15px;
 }
 
 /* ------------------INDEX-INICIO------------------*/
@@ -189,10 +190,30 @@ h2, h3, h4, h5 {
     padding-bottom: 40px;
 }
 
-.fotoperfil {
-    border: 6px solid #3423a3;
-    border-radius: 3em;
+#contenedor-imagen{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #3423A3;
+    background-image: url(img/fotocv-silvinasanchez.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
 }
+
+#flor-superior-derecha{
+    position: absolute;
+    top: 49em;
+}
+
+.flor-giratoria-perfil{
+    animation-name: flor;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
 
 .contenedor-nav {
     display: flex;
@@ -201,12 +222,12 @@ h2, h3, h4, h5 {
 }
 
 #subtitulo-header {
-    color:#FF8FA7;
+    color: #FF8FA7;
     font-family: 'Monofonto', sans-serif;
     font-size: 2.3rem;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 1.9rem;
+    letter-spacing: 22px;
     text-transform: uppercase;
 }
 
@@ -227,7 +248,6 @@ h2, h3, h4, h5 {
 
 .info-principal{
     width: 85%;
-    /* height: 71vh; */
     display: flex;
     padding: 50px 0px 50px 0px;
     gap: 20px;
@@ -267,6 +287,10 @@ h2, h3, h4, h5 {
     gap: 20px;
 }
 
+.seccion2-txt-animacion{
+    display: flex;
+}
+
 .titulos-hover {
     display: flex;
     gap: 30px;
@@ -276,31 +300,18 @@ a{
     text-decoration: none;
 }
 
-.ilustraciones:hover{
+.ilustraciones:hover,.personajes:hover,.diseno-grafico:hover,.lettering:hover {
     background-color: #D2CCFA;
-    transition: 1s;
-}
-
-.personajes:hover{
-    background-color: #D2CCFA;
-    transition: 1s;
-}
-
-.diseno-grafico:hover{
-    background-color: #D2CCFA;
-    transition: 1s;
-}
-
-.lettering:hover{
-    background-color: #D2CCFA;
-    transition: 1s;
+    transition: ease 300ms;
 }
 
 .info-ilustracion{
-    width: 59%;
+    width: 36%;
+    text-wrap: balance;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: flex-start;
 }
 
 
@@ -333,7 +344,9 @@ a{
 }
 
 .boton-contacto:hover{
-    background-color: #ff8fa7;
+    transition: ease 300ms;
+    color: pink;
+    background-color: #3423A3;
 }
 
 .page-contacto section {
@@ -423,18 +436,21 @@ textarea{
         height: 660px;
         background-image: url(img/icons/flor2.svg);
     }
-
-    /*100%{
-        width: 1500px;
-        height: 660px;
-        background-image: url(img/icons/flor3.svg);*/
     }
 .page-intro-galeria{
     background-color: rgb(210, 204, 250);
     display: flex;
     justify-content: center;
     height: 100vh;
-    align-items: center
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-intro-galeria{
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
 }
 
 .botonera-galeria{
@@ -475,7 +491,14 @@ textarea{
 
 .p-galeria{
     font-family: 'Helvetica', sans-serif;
-    font-size: 30px;}
+    font-size: 30px;
+    text-wrap: balance;
+    line-height: 41px;
+}
+
+.contenedor-p-galeria{
+    width: 65%;
+}
 
 .seccion-galeria{
     padding: 0rem 0rem 4rem 5rem;
@@ -517,10 +540,6 @@ textarea{
 .imagen2{
     grid-row: 1/1;
     grid-column: 2/4;
-}
-
-#imagen-ancha {
-    width: 100%;
 }
 
 .light-box{
@@ -609,6 +628,11 @@ video{
 #redes-sociales {
     display: flex;
     gap: 35px;
+}
+
+.redes:hover {
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 /*------------------ fin FOOTER------------------ */
@@ -703,15 +727,18 @@ video{
     #header-sobremi {
         background-color: #3423A3;
         color: #FF8FA7;
-        padding: 55px 0rem 0rem 30px;
+        width: 100%;
+        display: flex;
+        padding: 55px 30px 30px 30px;
         padding-bottom: 40px;
+        flex-direction: column;
     }
 
     h1 {
         font-family: "Space-Grotesk", sans-serif;
-        font-size: 79px;
+        font-size: 121px;
         text-transform: uppercase;
-        line-height: 92px;
+        line-height: 144px;
         padding: 20px 0px 5px 0px;
     }
     
@@ -731,24 +758,43 @@ video{
     #subtitulo-header {
         color: #FF8FA7;
         font-family: 'Monofonto', sans-serif;
-        font-size: 16px;
+        font-size: 31px;
         font-style: normal;
         font-weight: 400;
-        line-height: 27px;
+        line-height: 50px;
         letter-spacing: 10px;
         text-transform: uppercase;
+        text-wrap: balance;
+    }
+
+    #contenedor-imagen {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border: 5px solid #3423A3;
+        background-image: url(img/fotocv-silvinasanchez.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+    }
+
+    #flor-superior-derecha {
+        position: absolute;
+        top: 75em;
     }
     
     .titulo-sub{
-        width: 63%;
+        width: 100%;
+        padding: 40px 0px;
     }
     .botonera {
         display: flex;
         gap: 2rem;
+        flex-wrap: wrap;
     }
     
     .botones{
-        font-size: 1.3rem;
+        font-size: 27px;
         text-decoration: none;
         color: #FF8FA7;
         text-transform: uppercase;
@@ -777,11 +823,11 @@ video{
     }
     
     .titulo-quiensoy{
-        width: 73%;
+        width: 100%;
     }
 
     h3 {
-        font-size: 40px;
+        font-size: 60px;
         font-family: 'Monofonto', sans-serif;
         text-transform: uppercase;
         font-weight: 100;
@@ -789,21 +835,28 @@ video{
 
     h4 {
         font-family: 'Monofonto', sans-serif;
-        font-size: 23px;
+        font-size: 36px;
         text-transform: uppercase;
         font-weight: 100;
+    }
+
+    h2 {
+        font-family: 'Space-Grotesk', sans-serif;
+        font-size: 4em;
+        text-transform: uppercase;
     }
 
     .textos-lectura-30px {
         color: #3423A3;
         font-family: 'Helvetica', sans-serif;
-        font-size: 20px;
+        font-size: 28px;
+        text-wrap: balance;
     }
 
     .textos-lectura-24px {
         color: #3423A3;
         font-family: 'Helvetica', sans-serif;
-        font-size: 17px;
+        font-size: 25px;
     }
     
     .paquetes-textos{
@@ -813,11 +866,6 @@ video{
         gap: 2rem;
     }
     
-    .paquetes-textos2{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
     
     .imgs-habilidades {
         display: flex;
@@ -825,16 +873,15 @@ video{
     }
     
     .seccion2{
-        background-color: #FF8FA7;
         display: flex;
         flex-direction: column;
-        padding: 50px 0px 50px 80px;
-        gap: 20px;
+        padding: 50px 0px 50px 30px;
     }
     
     .titulos-hover {
         display: flex;
-        gap: 30px;
+        gap: 0px;
+        flex-direction: column;
     }
     
     a{
@@ -862,10 +909,21 @@ video{
     }
     
     .info-ilustracion{
-        width: 59%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    #footer {
+        color: #FF8FA7;
+        background-color: black;
+        display: flex;
+        padding: 40px 80px 30px 40px;
+        gap: 2em;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
 }
